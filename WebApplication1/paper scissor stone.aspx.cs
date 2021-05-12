@@ -93,7 +93,7 @@ namespace WebApplication1
         {
             Application["count"] = Convert.ToInt32(Application["count"]) - 1;
             Session.RemoveAll();
-            Response.Redirect("login");
+            Response.Redirect("logintest");
            
         }
 
