@@ -13,7 +13,7 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void Button2_Click(object sender, EventArgs e)
@@ -32,6 +32,11 @@ namespace WebApplication1
             Command.ExecuteNonQuery();
 
             connection.Close();
+            loginresult.Text = "done";
+        }
+        protected void Button1_Click(object sender, EventArgs e) 
+        {
+            Response.Redirect("logintest");
         }
     }
 }

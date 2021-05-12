@@ -23,8 +23,8 @@
             <input type="password"  id="name" name="name" placeholder="輸入密碼" value="">
             <asp:Label ID="loginresult" runat="server" Text="Label"></asp:Label>
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Page_Load" />
-            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Button" />
+            <asp:Button ID="Button1" runat="server" Text="登入畫面" OnClick="Button1_Click" />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="SUBMIT" />
         </div>
     </form>
 </body>

@@ -22,6 +22,7 @@
             <asp:Label ID="loginresult" runat="server"></asp:Label>
             </br>
             <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Page_Load" />
+             <asp:Button ID="Button2" runat="server" Text="Registered" OnClick="Button2_Click" />
         </div>
     </form>
 </body>
