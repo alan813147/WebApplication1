@@ -18,11 +18,11 @@ namespace WebApplication1
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            string s_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["accountInfoConnectionString"].ConnectionString;
+            string s_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["AccountDbConnectionString"].ConnectionString;
 
             SqlConnection connection = new SqlConnection(s_data);
 
-            string sql = $"insert into [accountform](account,passwd,name)values('" + Request.Form["user"] + "','" + Request.Form["passwd"] + "','" + Request.Form["name"] + "')";
+            string sql = $"insert into [accountInfo](account,passwd,name)values('" + Request.Form["user"] + "','" + Request.Form["passwd"] + "','" + Request.Form["name"] + "')";
 
             connection.Open();
 

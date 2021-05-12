@@ -21,12 +21,12 @@ namespace WebApplication1
                 if (Request.Form["user"] != null && Request.Form["passwd"] != null)
                 {
 
-                    string s_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["accountInfoConnectionString"].ConnectionString;
+                    string s_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["AccountDbConnectionString"].ConnectionString;
 
 
                     SqlConnection connection = new SqlConnection(s_data);
 
-                    string sqlTest = "select * from accountform where account='" + Request.Form["user"] + "'";
+                    string sqlTest = "select * from accountInfo where account='" + Request.Form["user"] + "'";
 
 
                     SqlCommand Command = new SqlCommand(sqlTest, connection);
